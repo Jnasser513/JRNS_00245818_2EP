@@ -8,9 +8,18 @@
       <e p="Segundo parcial" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Controlador" t="Include">
+          <e p="Encriptador.cs" t="Include" />
+        </e>
         <e p="Form1.cs" t="Include" />
         <e p="Form1.Designer.cs" t="Include" />
+        <e p="Modelo" t="Include">
+          <e p="APPUSER.cs" t="Include" />
+          <e p="ConnectionDB.cs" t="Include" />
+          <e p="UsuarioDAO.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
@@ -20,6 +29,17 @@
           <e p="Settings.settings" t="Include" />
         </e>
         <e p="Segundo parcial.csproj" t="IncludeRecursive" />
+        <e p="Visual" t="Include">
+          <e p="frmCambiarContrasena.cs" t="Include" />
+          <e p="frmCambiarContrasena.Designer.cs" t="Include" />
+          <e p="frmCambiarContrasena.resx" t="Include" />
+          <e p="frmInicioSesion.cs" t="Include" />
+          <e p="frmInicioSesion.Designer.cs" t="Include" />
+          <e p="frmInicioSesion.resx" t="Include" />
+          <e p="frmPrincipal.cs" t="Include" />
+          <e p="frmPrincipal.Designer.cs" t="Include" />
+          <e p="frmPrincipal.resx" t="Include" />
+        </e>
       </e>
       <e p="Segundo parcial.sln" t="IncludeFlat" />
     </e>

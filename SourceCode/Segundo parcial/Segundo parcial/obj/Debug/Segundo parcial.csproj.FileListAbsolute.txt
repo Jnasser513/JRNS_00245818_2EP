@@ -1,0 +1,35 @@
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Segundo_parcial.exe.config
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Segundo_parcial.exe
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Segundo_parcial.pdb
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo parcial.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo parcial.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo parcial.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.exe
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.pdb
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.Visual.frmInicioSesion.resources
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.exe.config
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Npgsql.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Buffers.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Memory.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Text.Json.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.ValueTuple.dll
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Npgsql.pdb
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\Npgsql.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Buffers.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Memory.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Text.Json.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\bin\Debug\System.ValueTuple.xml
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo parcial.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.Visual.frmPrincipal.resources
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.Visual.frmCambiarContrasena.resources
