@@ -97,6 +97,14 @@
     </Compile>
     <Compile Include="Modelo\ConnectionDB.cs" />
     <Compile Include="Modelo\APPUSER.cs" />
+    <Compile Include="Modelo\Direccion.cs" />
+    <Compile Include="Modelo\DireccionDAO.cs" />
+    <Compile Include="Modelo\Negocio.cs" />
+    <Compile Include="Modelo\NegocioDAO.cs" />
+    <Compile Include="Modelo\Orden.cs" />
+    <Compile Include="Modelo\OrdenDAO.cs" />
+    <Compile Include="Modelo\Producto.cs" />
+    <Compile Include="Modelo\ProductoDAO.cs" />
     <Compile Include="Modelo\RegistroDAO.cs" />
     <Compile Include="Modelo\UsuarioDAO.cs" />
     <Compile Include="Program.cs" />

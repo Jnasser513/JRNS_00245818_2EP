@@ -75,7 +75,6 @@ namespace Segundo_parcial.Visual
         }
         private void actualizarControles()
         {
-
             List<APPUSER> lista = UsuarioDAO.GetLista();
 
             dataGridView1.DataSource = null;
@@ -85,6 +84,56 @@ namespace Segundo_parcial.Visual
             comboBox1.ValueMember = "password";
             comboBox1.DisplayMember = "username";
             comboBox1.DataSource = lista;
+        }
+        private void actualizarControlesA()
+        {
+            dataGridView2.DataSource = null;
+            dataGridView2.DataSource = DireccionDAO.verDirecciones(usuario);
+            
+            comboBox2.DataSource = null;
+            comboBox2.ValueMember = "idaddress";
+            comboBox2.DisplayMember = "address";
+            comboBox2.DataSource = DireccionDAO.verDirecciones(usuario);
+        }
+        private void actualizarControlesB()
+        {
+
+            List<Negocio> lista = NegocioDAO.getLista();
+
+            dataGridView3.DataSource = null;
+            dataGridView3.DataSource = lista;
+            
+            comboBox3.DataSource = null;
+            comboBox3.ValueMember = "idbusiness";
+            comboBox3.DisplayMember = "name";
+            comboBox3.DataSource = lista;
+            
+            comboBox5.DataSource = null;
+            comboBox5.ValueMember = "idproduct";
+            comboBox5.DisplayMember = "name";
+            comboBox5.DataSource = ProductoDAO.getLista();
+            
+            comboBox4.DataSource = null;
+            comboBox4.ValueMember = "idbusiness";
+            comboBox4.DisplayMember = "name";
+            comboBox4.DataSource = NegocioDAO.getLista(); 
+        }
+        private void actualizarControlesP()
+        {
+            List<Producto> lista = ProductoDAO.getLista();
+            
+            comboBox5.DataSource = null;
+            comboBox5.ValueMember = "idproduct";
+            comboBox5.DisplayMember = "name";
+            comboBox5.DataSource = lista;
+            
+            dataGridView4.DataSource = null;
+            dataGridView4.DataSource = lista;
+            
+            comboBox4.DataSource = null; 
+            comboBox4.ValueMember = "idbusiness";
+            comboBox4.DisplayMember = "name";
+            comboBox4.DataSource = NegocioDAO.getLista(); 
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -97,6 +146,105 @@ namespace Segundo_parcial.Visual
                 MessageBox.Show("El usuario ha sido eliminado", "HUGO APP");
 
                 actualizarControles();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox4.Text.Length >= 6)
+                {
+                    DireccionDAO.agregarDireccion(textBox4.Text, usuario.username);
+
+                    MessageBox.Show("La direccion ha sido agregada!", "HUGO APP");
+
+                    textBox4.Clear();
+                    actualizarControles();
+                }
+                else
+                    MessageBox.Show("Ocurrio un error", "HUGO APP");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Algo salio mal...", "HUGO APP");
+            }
+        }
+        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro que desea eliminar esta direccion? " + comboBox2.Text ,
+                    "HUGO APP", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                DireccionDAO.eliminarDireccion(comboBox2.Text);
+
+                MessageBox.Show("La direccion ha sido eliminada", "HUGO APP");
+                
+                actualizarControles();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox5.Text.Length >= 4)
+                {
+                    NegocioDAO.crearNegocio(textBox5.Text, textBox6.Text);
+
+                    MessageBox.Show("¡Negocio agregado exitosamente!", "HUGO APP");
+
+                    textBox5.Clear();
+                    textBox6.Clear();
+                    actualizarControlesB();
+                }
+                else
+                    MessageBox.Show("Por favor digite un negocio con longitud minima de 4)",
+                        "HUGO APP", MessageBoxButtons.OK);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Algo salio mal...",
+                    "HUGO APP", MessageBoxButtons.OK);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea eliminar el negocio ? " + comboBox3.Text ,
+                "HUGO APP", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                NegocioDAO.eliminarNegocio(comboBox3.Text);
+
+                MessageBox.Show("El negocio ha sido eliminado!", "HUGO APP");
+
+                actualizarControlesB();
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Negocio neg = new Negocio();
+                neg.name = comboBox4.Text;
+
+                
+                Producto producto = new Producto();
+                producto.name = textBox8.Text;
+
+                ProductoDAO.agregarProducto(producto, neg);
+
+                MessageBox.Show("El producto ha sido agregado!", "HUGO APP");
+
+                textBox8.Clear();
+                actualizarControlesP();
+
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Error: " + exception.Message, "Hugo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

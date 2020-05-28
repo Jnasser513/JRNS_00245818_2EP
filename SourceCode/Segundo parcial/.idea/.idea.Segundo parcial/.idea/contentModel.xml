@@ -17,6 +17,14 @@
         <e p="Modelo" t="Include">
           <e p="APPUSER.cs" t="Include" />
           <e p="ConnectionDB.cs" t="Include" />
+          <e p="Direccion.cs" t="Include" />
+          <e p="DireccionDAO.cs" t="Include" />
+          <e p="Negocio.cs" t="Include" />
+          <e p="NegocioDAO.cs" t="Include" />
+          <e p="Orden.cs" t="Include" />
+          <e p="OrdenDAO.cs" t="Include" />
+          <e p="Producto.cs" t="Include" />
+          <e p="ProductoDAO.cs" t="Include" />
           <e p="RegistroDAO.cs" t="Include" />
           <e p="UsuarioDAO.cs" t="Include" />
         </e>
