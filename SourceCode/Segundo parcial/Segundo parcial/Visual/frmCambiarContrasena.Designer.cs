@@ -70,7 +70,7 @@ namespace Segundo_parcial.Visual
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(333, 91);
+            this.label1.Location = new System.Drawing.Point(332, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 2;
@@ -142,19 +142,20 @@ namespace Segundo_parcial.Visual
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.Location = new System.Drawing.Point(375, 258);
+            this.button1.Location = new System.Drawing.Point(374, 258);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 31);
             this.button1.TabIndex = 3;
             this.button1.Text = "Cambiar contraseña";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button2.Location = new System.Drawing.Point(375, 295);
+            this.button2.Location = new System.Drawing.Point(374, 295);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 31);
             this.button2.TabIndex = 3;
@@ -168,7 +169,7 @@ namespace Segundo_parcial.Visual
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(613, 353);
+            this.ClientSize = new System.Drawing.Size(612, 353);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -183,7 +184,7 @@ namespace Segundo_parcial.Visual
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCambiarContrasena";
-            this.Text = "frmCambiarContrasena";
+            this.Text = "Cambiar contraseña";
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -5,32 +5,30 @@ namespace Segundo_parcial.Modelo
 {
     public class ConnectionDB
     {
-        private static string sConnection =
-            "Server=127.0.0.1;Port=5432;User id=postgres;Password=gaseosa1234;Database=HUGOAPP2P";
-
-        public static DataTable ExecuteQuery(string query)
+        private static string CadenaConexion = 
+            "Server=127.0.0.1;Port=5432;User Id=postgres;Password=gaseosa1234;Database=HUGOAPP2P";
+        
+        public static DataTable realizarConsulta(string sql)
         {
-            NpgsqlConnection connection = new NpgsqlConnection(sConnection);
+            NpgsqlConnection conn = new NpgsqlConnection(CadenaConexion);
             DataSet ds = new DataSet();
             
-            connection.Open();
-            
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(query, connection);
+            conn.Open();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
             da.Fill(ds);
+            conn.Close();
             
-            connection.Close();
-
             return ds.Tables[0];
         }
 
-        public static void ExecuteNonQuery(string act)
+        public static void realizarAccion(string sql)
         {
-            NpgsqlConnection connection = new NpgsqlConnection(sConnection);
+            NpgsqlConnection conn = new NpgsqlConnection(CadenaConexion);
             
-            connection.Open();
-            NpgsqlCommand command = new NpgsqlCommand(act, connection);
-            command.ExecuteNonQuery();
-            connection.Close();
+            conn.Open();
+            NpgsqlCommand nc = new NpgsqlCommand(sql, conn);
+            nc.ExecuteNonQuery();
+            conn.Close();
         }
     }
 }

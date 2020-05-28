@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Segundo_parcial.Controlador;
 using Segundo_parcial.Modelo;
 
 namespace Segundo_parcial.Visual
@@ -14,20 +15,17 @@ namespace Segundo_parcial.Visual
         {
             try
             {
-                var appuser = UsuarioDAO.GetUser(textBox1.Text, textBox2.Text);
-                if (appuser.user.Equals("") || appuser.password.Equals(""))
+                var user = UsuarioDAO.GetUser(textBox1.Text, textBox2.Text);
+                if (user.username.Equals("") || user.password.Equals(""))
                 {
-                    MessageBox.Show("Usuario y/o contraseña incorrecta","HUGO APP",
-                        MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("El usuario y/o contraseña ingresado es incorrecto", "Hugo App");
                 }
                 else
                 {
-                    MessageBox.Show("Bienvenido","HUGO APP",
-                        MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    frmPrincipal ventana = new frmPrincipal(appuser);
+                    MessageBox.Show("Bienvenido!", "Hugo App");
+                    frmPrincipal ventana = new frmPrincipal(user);
                     ventana.Show();
                     this.Hide();
-                
                 }
             }
             catch (Exception exception)
@@ -35,6 +33,10 @@ namespace Segundo_parcial.Visual
                 MessageBox.Show(exception.ToString());
                 throw;
             }
+        }
+
+        private void frmInicioSesion_Load(object sender, EventArgs e)
+        {
         }
 
         private void button3_Click(object sender, EventArgs e)

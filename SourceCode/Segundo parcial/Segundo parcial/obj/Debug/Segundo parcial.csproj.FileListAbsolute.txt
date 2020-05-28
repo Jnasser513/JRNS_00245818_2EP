@@ -33,3 +33,4 @@ C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo par
 C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo parcial.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.Visual.frmPrincipal.resources
 C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.Visual.frmCambiarContrasena.resources
+C:\Users\Lenovo\Desktop\JRNS_00245818_2EP\SourceCode\Segundo parcial\Segundo parcial\obj\Debug\Segundo_parcial.Form1.resources

@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace Segundo_parcial.Controlador
 {
-    public class Encriptador
+    public static class Encriptador
     {
         public static string CrearMD5(string input)
         {

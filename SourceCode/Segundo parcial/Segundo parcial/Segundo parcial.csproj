@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Modelo\ConnectionDB.cs" />
     <Compile Include="Modelo\APPUSER.cs" />
+    <Compile Include="Modelo\RegistroDAO.cs" />
     <Compile Include="Modelo\UsuarioDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +119,9 @@
     <Compile Include="Visual\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
