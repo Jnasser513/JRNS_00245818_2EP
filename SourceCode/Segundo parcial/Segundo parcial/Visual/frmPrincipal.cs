@@ -85,17 +85,7 @@ namespace Segundo_parcial.Visual
             comboBox1.DisplayMember = "username";
             comboBox1.DataSource = lista;
         }
-        private void actualizarControlesA()
-        {
-            dataGridView2.DataSource = null;
-            dataGridView2.DataSource = DireccionDAO.verDirecciones(usuario);
-            
-            comboBox2.DataSource = null;
-            comboBox2.ValueMember = "idaddress";
-            comboBox2.DisplayMember = "address";
-            comboBox2.DataSource = DireccionDAO.verDirecciones(usuario);
-        }
-        private void actualizarControlesB()
+        private void actualizarControlesN()
         {
 
             List<Negocio> lista = NegocioDAO.getLista();
@@ -135,6 +125,17 @@ namespace Segundo_parcial.Visual
             comboBox4.DisplayMember = "name";
             comboBox4.DataSource = NegocioDAO.getLista(); 
         }
+        
+        private void actualizarControlesD()
+        {
+            dataGridView2.DataSource = null;
+            dataGridView2.DataSource = DireccionDAO.verDirecciones(usuario);
+            
+            comboBox2.DataSource = null;
+            comboBox2.ValueMember = "idaddress";
+            comboBox2.DisplayMember = "address";
+            comboBox2.DataSource = DireccionDAO.verDirecciones(usuario);
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -160,17 +161,17 @@ namespace Segundo_parcial.Visual
                     MessageBox.Show("La direccion ha sido agregada!", "HUGO APP");
 
                     textBox4.Clear();
-                    actualizarControles();
+                    actualizarControlesD();
                 }
                 else
-                    MessageBox.Show("Ocurrio un error", "HUGO APP");
+                    MessageBox.Show("Debe digitar una direccion con mas de 6 caracteres", "HUGO APP");
             }
             catch (Exception)
             {
                 MessageBox.Show("Algo salio mal...", "HUGO APP");
             }
         }
-        
+
         private void button4_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Seguro que desea eliminar esta direccion? " + comboBox2.Text ,
@@ -196,7 +197,7 @@ namespace Segundo_parcial.Visual
 
                     textBox5.Clear();
                     textBox6.Clear();
-                    actualizarControlesB();
+                    actualizarControlesN();
                 }
                 else
                     MessageBox.Show("Por favor digite un negocio con longitud minima de 4)",
@@ -218,7 +219,7 @@ namespace Segundo_parcial.Visual
 
                 MessageBox.Show("El negocio ha sido eliminado!", "HUGO APP");
 
-                actualizarControlesB();
+                actualizarControlesN();
             }
         }
 
