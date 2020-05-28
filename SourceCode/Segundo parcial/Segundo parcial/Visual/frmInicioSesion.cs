@@ -18,11 +18,11 @@ namespace Segundo_parcial.Visual
                 var user = UsuarioDAO.GetUser(textBox1.Text, textBox2.Text);
                 if (user.username.Equals("") || user.password.Equals(""))
                 {
-                    MessageBox.Show("El usuario y/o contraseña ingresado es incorrecto", "Hugo App");
+                    MessageBox.Show("Por favor revisar credenciales", "HUGO APP");
                 }
                 else
                 {
-                    MessageBox.Show("Bienvenido!", "Hugo App");
+                    MessageBox.Show("Bienvenido!", "HUGO APP");
                     frmPrincipal ventana = new frmPrincipal(user);
                     ventana.Show();
                     this.Hide();

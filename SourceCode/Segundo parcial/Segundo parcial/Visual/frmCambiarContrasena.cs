@@ -21,33 +21,39 @@ namespace Segundo_parcial.Visual
         {
             this.Close();
         }
+        
+        private void CambiarContrasena_Load(object sender, EventArgs e)
+        {
+            comboBox1.DataSource = null;
+            comboBox1.ValueMember = "password";
+            comboBox1.DisplayMember = "username";
+            comboBox1.DataSource = UsuarioDAO.GetLista();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool actualIgual = UsuarioDAO.GetUser(txtUser, txtContraActual);
-            bool NuevaIgual = txtNcontra.Text.Equals(txtCcontra.Text);
-            bool nuevaValida = txtNcontra.Text.Length > 0;
-            if (actualIgual && NuevaIgual && nuevaValida)
+            bool actualIgual = comboBox1.SelectedValue.Equals(textBox2.Text);
+            bool nuevaIgual = textBox3.Text.Equals(textBox4.Text);
+            bool nuevaValida = textBox3.Text.Length > 0;
+
+            if (actualIgual && nuevaIgual && nuevaValida)
             {
                 try
                 {
-                    AppUserDAO.ActualizarContra(txtUser.Text, txtNcontra.Text);
-                    MessageBox.Show("Contraseña actualizada con éxito",
-                        "Hugo App", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    UsuarioDAO.ActualizarPassword(comboBox1.Text, textBox3.Text);
+                    
+                    MessageBox.Show("La contraseña ha sido actualizada", "HUGO APP");
                     
                     this.Close();
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Favor verifique que los datos ingresados sean válidos",
-                        "Hugo App", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Algo salio mal...", "HUGO APP");
                 }
             }
             else
-            {
-                MessageBox.Show("Favor verifique que los datos ingresados sean válidos",
-                    "Hugo App", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                MessageBox.Show("Datos incorrectos", "HUGO APP");
         }
+        
     }
 }

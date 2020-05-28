@@ -5,8 +5,13 @@ namespace Segundo_parcial.Modelo
 {
     public class ConnectionDB
     {
-        private static string CadenaConexion = 
-            "Server=127.0.0.1;Port=5432;User Id=postgres;Password=gaseosa1234;Database=HUGOAPP2P";
+        private static string host = "127.0.0.1",
+            database = "HUGOAPP2P",
+            userId = "postgres",
+            password = "gaseosa1234";
+        
+        private static string CadenaConexion =
+            $"Host={host};Port=5432;User Id={userId};Password={password};Database={database}";
         
         public static DataTable realizarConsulta(string sql)
         {

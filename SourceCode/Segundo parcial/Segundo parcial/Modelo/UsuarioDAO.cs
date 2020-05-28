@@ -24,30 +24,32 @@ namespace Segundo_parcial.Modelo
 
         public static List<APPUSER> GetLista()
         {
-            string sql = "SELECT * FROM appuser";
-
+            string sql = "SELECT * from appuser";
+           
             DataTable dt = ConnectionDB.realizarConsulta(sql);
-            
+
             List<APPUSER> lista = new List<APPUSER>();
+            
             foreach (DataRow fila in dt.Rows)
             {
-                APPUSER u = new APPUSER();
-                u.fullname = fila[0].ToString();
-                u.username = fila[1].ToString();
-                u.password = fila[2].ToString();
-                u.type = Convert.ToBoolean(fila[3].ToString());
-                lista.Add(u);
+                APPUSER user = new APPUSER();
+                user.idUser = Convert.ToInt32(fila[0].ToString());
+                user.fullname = fila[1].ToString();
+                user.username = fila[2].ToString();
+                user.password = fila[3].ToString();
+                user.type = Convert.ToBoolean(fila[4].ToString());
+                
+                lista.Add(user);
             }
-
             return lista;
         }
         public static void NewUser(string fullname, string username, string password, bool type)
         {
-            string sql = String.Format(
-                "INSERT INTO appuser(fullname, username, password, userType) VALUES ('{0}', '{1}', '{2}', '{true}');",
-                fullname, username, password, type);
-
-                ConnectionDB.realizarAccion(sql);
+            string sql = string.Format(
+                "INSERT INTO appuser(fullname, username, password, userType) VALUES('{0}', '{1}', '{2}', {3});",
+                fullname, username,password, type ? "true" : "false");
+            
+            ConnectionDB.realizarAccion(sql);
         }
         public static void ActualizarPermiso(string username, bool userType)
         {
@@ -59,9 +61,8 @@ namespace Segundo_parcial.Modelo
         }
         public static void ActualizarPassword(string username, string password)
         {
-            string sql = string.Format(
-                "UPDATE appuser SET password='{0}' WHERE username='{1}';",
-                username, password);
+            string sql = String.Format(
+                "update appuser set password ='{0}' where username='{1}';", password, username);
             
             ConnectionDB.realizarAccion(sql);
         }
